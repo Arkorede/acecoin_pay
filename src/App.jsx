@@ -65,7 +65,7 @@ function App() {
         <div className="absolute z-10 right-0 cursor-pointer bg-[#f8f9fa] px-3 py-2.5">
           <img src={close} alt="close" className="h-5" />
         </div>
-        <div className="col-span-12 mr-[34px] mb-16 md:mb-0 md:col-span-8">
+        <div className="col-span-12 mb-16 md:mb-0 md:col-span-8 md:mr-[34px]">
           <div className="flex items-center justify-center justify-between">
             <div className="flex items-center justify-center gap-4 sm:gap-2">
               <span className="block h-12 w-12 bg-[#035fff] rounded-full"></span>
@@ -73,7 +73,7 @@ function App() {
                 AceCoin <span className="font-normal">Pay</span>
               </h1>
             </div>
-            <div className="font -medium text-[1.35rem]">
+            <div className="hidden font-medium text-[1.35rem] sm:block">
               <span className="bg-[#17254c] text-white h-[1.9rem] w-[1.3rem] inline-flex justify-center items-center rounded mr-0.5">
                 0
               </span>
@@ -100,7 +100,7 @@ function App() {
                     Enter the 16-digit card number on the card
                   </p>
                 </div>
-                <button className="flex items-center justify-center gap-2">
+                <button className="hidden flex items-center justify-center gap-2 sm:flex">
                   <img
                     src={edit_pencil}
                     alt="edit"
@@ -151,6 +151,7 @@ function App() {
                 <button
                   className="absolute right-[16.5px] top-[21px] text-[#868e96] text-2xl"
                   onClick={handleVisibility1}
+                  type="button"
                 >
                   <ion-icon name="apps"></ion-icon>
                 </button>
@@ -196,6 +197,7 @@ function App() {
                 <button
                   className="absolute right-[16.5px] top-[21px] text-[#868e96] text-2xl"
                   onClick={handleVisibility2}
+                  type="button"
                 >
                   <ion-icon name="apps"></ion-icon>
                 </button>
