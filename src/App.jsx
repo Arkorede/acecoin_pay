@@ -117,7 +117,7 @@ function App() {
                 <img
                   src={mastercard_symbol}
                   alt="mastercard symbol"
-                  className="absolute left-4 h-8 top-4"
+                  className="absolute left-4 h-7 top-4 sm:h-8"
                 />
                 <input
                   type="tel"
@@ -131,7 +131,7 @@ function App() {
                   <img
                     src={verified_badge}
                     alt="verified badge"
-                    className="absolute right-4 h-6 top-4 mt-[5px]"
+                    className="absolute right-4 h-5 top-4 mt-[5px] sm:h-6"
                   />
                 )}
               </div>
